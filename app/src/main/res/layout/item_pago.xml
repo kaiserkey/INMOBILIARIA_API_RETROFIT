@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundinm"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvCodigoLabel"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Código pago:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvCodigoPago"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCodigoPago"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Código pago...."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvCodigoLabel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNumPagoLabel"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Número de pago:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvNumPago"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodigoLabel" />
+
+
+        <TextView
+            android:id="@+id/tvNumPago"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="numero de pago...."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvNumPagoLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodigoPago" />
+
+        <TextView
+            android:id="@+id/tvCodigoContratoLabel"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Código de contrato:"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvCodigoContrato"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumPagoLabel" />
+
+
+        <TextView
+            android:id="@+id/tvCodigoContrato"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Código contrato..."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvCodigoContratoLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumPago" />
+
+        <TextView
+            android:id="@+id/tvImporteLabel"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Importe:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvImporte"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodigoContratoLabel" />
+
+        <TextView
+            android:id="@+id/tvImporte"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="importe..."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvImporteLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodigoContrato" />
+
+
+        <TextView
+            android:id="@+id/tvFechaPagoLabel"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Fecha de pago:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvFechaPago"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvImporteLabel" />
+
+        <TextView
+            android:id="@+id/tvFechaPago"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="#80CCCCCC"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="fecha pago..."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvFechaPagoLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvImporte" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
